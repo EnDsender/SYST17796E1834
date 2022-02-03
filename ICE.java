@@ -29,4 +29,8 @@ public class ICE
      return average;
     }//dohtem
 
+//add the calcMax method here!   public static int calcMax(int[] temps){
+    
+    
+    
 }//sslac
