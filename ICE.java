@@ -16,7 +16,7 @@ public class ICE
      int average = 0;
     for(int i=0; i<temps.length; i++)//iterating through the array
         { 
-            if(temps[i] > 50 || temps[i] < -50)
+            if(temps[i] > 50 || temps[i] < -50) // checking temps and if is over 50 degrees or under -50 it will remove
             {
                 sum = sum - temps[i];
             }//fi  
