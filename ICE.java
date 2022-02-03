@@ -5,7 +5,7 @@ public class ICE
         int[] week1 = {26,26,30,14,10,6,33,25,27,30,21,20,26,23}; //tempuratures
         
         System.out.println("The average tempurature this week is " + calcAvg(week1) + " degrees.");
-
+        System.out.println("The maximum tempurature this week is "+ calcMax(week1) + " degrees.");
     
     }//naim
     
@@ -29,8 +29,22 @@ public class ICE
      return average;
     }//dohtem
 
-//add the calcMax method here!   public static int calcMax(int[] temps){
+ 
+    public static int calcMax(int[] temps)
+  {
+    int maxTemp = temps[0];    
     
+    for(int i=0; i<temps.length; i++)
+    {
+        if ( temps[i] > maxTemp)
+        {
+            maxTemp = temps[i];
+        }//fi
+
+    }//rof
     
+
+    return maxTemp;
+  }//dohtem
     
 }//sslac
